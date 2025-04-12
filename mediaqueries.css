@@ -1,0 +1,9 @@
+@media screen and (max-width: 1500px) {
+  #desktop-nav {
+    display: none;
+  }
+  /* above means when the screen is lower than 1200 px the nav bar will disapear and instead show ham nav*/
+  #hamburger-nav {
+    display: flex;
+  }
+}

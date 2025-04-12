@@ -1,0 +1,223 @@
+/* GENERAl */
+/* to create a comment you can use ctrl+c as a shortcut but that doesnt seem to work for me*/
+
+/*below targets the whole page moving everything to align left*/
+
+@font-face {
+  font-family: "BeasStudying.ttf"; /* Name of the font */
+  src: url("./assets/BeasStudying.ttf") format("truetype"); /* Path to the font file */
+}
+/*the * targets all text globally*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*will need to download and import font we want to use, im not sure why the css rule code from google didnt show up */
+  font-family: "BeasStudying.ttf", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION*/
+/* a, stands for all the links and btn is a new class for buttons, anso shift+alt+f reformats code */
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV*/
+/* flex is a flex box, its the nav bar across vs listed nav*/
+/* 17vh is 17 perc of whole screen, rem similar to pixels*/
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rbg (181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/*HAMBURGER MENU*/
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+/*the translate numbers make the x box for the nav box*/
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+  opacity: 1;
+  transform: none;
+}
+
+/*SECTIONS--all links*/
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/*PROFILE SECTION*/
+/*can also combube section container and profile to shortebn the code*/
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  margin: auto 0; /*this means auto on top and 0 on sides*/
+}
+
+.section__text {
+  font-size: 2rem;
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  /* p is the paragraph area*/
+  font-weight: 400;
+}
+
+.section__text__p1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #7d8462;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/*ICONS*/
+
+.icons {
+  cursor: pointer;
+  height: 3rem;
+}
