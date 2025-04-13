@@ -23,7 +23,7 @@ html {
 }
 
 p {
-  color: rgb(61, 61, 61);
+  color: #8a8e75;
 }
 
 /* TRANSITION*/
@@ -55,7 +55,7 @@ nav {
 }
 
 a {
-  color: rgb(61, 61, 61);
+  color: #8a8e75;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -69,7 +69,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
-  color: rgb(61, 61, 61);
+  color: #8a8e75;
 }
 
 .logo:hover {
@@ -98,7 +98,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: rgb(61, 61, 61);
+  background-color: #8a8e75;
   transition: all 0.3s ease-in-out;
 }
 
@@ -120,7 +120,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: rgb(61, 61, 61);
+  color: #8a8e75;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
@@ -130,7 +130,7 @@ a:hover {
 }
 
 .menu-links a:hover {
-  color: rgb(104, 100, 100);
+  color: #bec5a4;
   text-decoration: underline;
 }
 
@@ -185,6 +185,10 @@ section {
   margin: auto 0; /*this means auto on top and 0 on sides*/
 }
 
+.profile-pic {
+  border-radius: 2rem;
+}
+
 .section__text {
   font-size: 2rem;
   align-self: center;
@@ -200,6 +204,11 @@ section {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 0.5rem;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .title {
@@ -218,7 +227,87 @@ section {
 
 /*ICONS*/
 
-.icons {
+.icon {
   cursor: pointer;
   height: 3rem;
+}
+
+/*BUTTONS*/
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: #a7ad90 0.1rem solid;
+  background-color: #bec5a4;
+  color: white;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+  background-color: #d0d8b5;
+  color: white;
+}
+
+/*ABOUT SECTION*/
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem; /*this means -5rem from the right side of the screen and 2 up from the bottom*/
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: #a7ad90 0.1rem solid;
+  border-color: #a7ad90;
+  text-align: center;
+}
+
+.section-container {
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
 }
