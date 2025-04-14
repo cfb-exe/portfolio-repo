@@ -117,24 +117,41 @@ space-between: Distributes items evenly across the container, with the first ite
   transition: all 0.3s ease-in-out;
 }
 
-.menu-links a{
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: black;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
 /* targets aLL the links */
-.menu-links li{
-    list-style: none;
+.menu-links li {
+  list-style: none;
 }
 
 /* this targets the js "open" class */
 .menu-links.open {
-    max-height: 300px; /* Adjust this value based on the number of links */
+  max-height: 300px; /* Adjust this value based on the number of links */
 }
 
-.hamburger-icon.open span:first-child
+/* this is the first span element, this is what transforms the line by rotating to x and moving slightly since rotating will skew */
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+/* this targets second line, removes it completely */
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+  opacity: 1;
+}
