@@ -16,6 +16,9 @@
 body {
   /*will need to download and import font we want to use, im not sure why the css rule code from google didnt show up */
   font-family: "WildberryHandwrittenThin.ttf", sans-serif;
+  background-image: url("./assets/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 html {
@@ -55,13 +58,13 @@ nav {
 }
 
 a {
-  color: #8a8e75;
+  color: #68604d;
   text-decoration: none;
   text-decoration-color: white;
 }
 
 a:hover {
-  color: grey;
+  color: #bec5a4;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rbg (181, 181, 181);
@@ -69,7 +72,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
-  color: #8a8e75;
+  color: #68604d;
 }
 
 .logo:hover {
@@ -98,7 +101,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: #8a8e75;
+  background-color: #68604d;
   transition: all 0.3s ease-in-out;
 }
 
@@ -106,12 +109,10 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: #f1ead8;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
   transition: all 0.3s ease-in-out;
 }
 
@@ -120,7 +121,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 2rem;
-  color: #8a8e75;
+  color: #68604d;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
@@ -212,7 +213,7 @@ section {
 
 .title {
   font-size: 2.5rem;
-  color: #616b4a;
+  color: #68604d;
   text-align: center;
   margin-bottom: 0.5rem;
 }
@@ -222,6 +223,10 @@ section {
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
+}
+
+.social-icon {
+  height: 5rem;
 }
 
 /*ICONS*/
@@ -253,7 +258,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: #a7ad90 0.1rem solid;
+  border: #68604d 0.1rem solid;
   background-color: #bec5a4;
   color: white;
 }
@@ -292,7 +297,7 @@ section {
 .arrow {
   position: absolute;
   right: -5rem; /*this means -5rem from the right side of the screen and 2 up from the bottom*/
-  bottom: 2.5rem;
+  bottom: 3.5rem;
 }
 
 .details-container {
@@ -300,8 +305,8 @@ section {
   flex: 1;
   background: #bec5a4;
   border-radius: 2rem;
-  border: #a7ad90 0.2rem solid;
-  border-color: #a7ad90;
+  border: #68604d 0.2rem solid;
+  border-color: #68604d;
   text-align: center;
   font-size: 2rem;
 }
@@ -327,4 +332,44 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+/*EXPERIENCE SECTION*/
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: #616b4a;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  color: #616b4a;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
 }
