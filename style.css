@@ -177,8 +177,6 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
-  background-color: #f1ead8;
-  border-radius: 2rem;
 }
 
 .section__pic-container {
@@ -214,10 +212,9 @@ section {
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #68604d;
   text-align: center;
-  margin-bottom: 0.5rem;
 }
 
 #socials-container {
