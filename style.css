@@ -1,24 +1,19 @@
-/* GENERAl */
-/* to create a comment you can use ctrl+c as a shortcut but that doesnt seem to work for me*/
+/* the hot key for commenting in css is type, then highlight and cntrl+/ then it will change to comment, or just use hotkey and it will auto populate*/
 
-/*below targets the whole page moving everything to align left*/
+/* to start a section periods are used for targetting elements with a class, # is used when targeting elements with a specific ID and you use no symbol when targeting html tags like body, p, h1,div */
 
-@font-face {
-  font-family: "WildberryHandwrittenThin.ttf"; /* Name of the font */
-  src: url("./assets/WildberryHandwrittenThin.ttf") format("truetype"); /* Path to the font file */
-}
-/*the * targets all text globally*/
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* the * targets the whole page */
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  /*will need to download and import font we want to use, im not sure why the css rule code from google didnt show up */
-  font-family: "WildberryHandwrittenThin.ttf", sans-serif;
-  background-image: url("./assets/background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -26,19 +21,18 @@ html {
 }
 
 p {
-  color: #8a8e75;
+  color: black;
 }
 
-/* TRANSITION*/
-/* a, stands for all the links and btn is a new class for buttons, anso shift+alt+f reformats code */
+/* TRANSITION */
+
+/* a is all the links */
 a,
 .btn {
   transition: all 300ms ease;
 }
 
-/* DESKTOP NAV*/
-/* flex is a flex box, its the nav bar across vs listed nav*/
-/* 17vh is 17 perc of whole screen, rem similar to pixels*/
+/* DESKTOP NAV */
 
 nav,
 .nav-links {
@@ -51,43 +45,49 @@ nav {
   height: 17vh;
 }
 
+/* lisat style takes away the bullet points that were originally part of the nav bar */
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 a {
-  color: #68604d;
+  color: black;
   text-decoration: none;
   text-decoration-color: white;
 }
 
 a:hover {
-  color: #bec5a4;
+  color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rbg (181, 181, 181);
+  text-decoration-color: grey;
 }
 
 .logo {
   font-size: 2rem;
-  color: #68604d;
 }
 
 .logo:hover {
   cursor: default;
 }
 
-/*HAMBURGER MENU*/
+/* HAMBURGER MENU */
+
 #hamburger-nav {
   display: none;
 }
 
+/* display: inline-block property makes an element behave like an inline element (e.g., <span>), but it also allows you to set width, height, padding, and margin, which are typically not possible with purely inline elements. */
 .hamburger-menu {
   position: relative;
   display: inline-block;
 }
+
+/* The justify-content property is used in Flexbox or Grid layouts to align items along the main axis (horizontal by default in Flexbox).
+
+space-between: Distributes items evenly across the container, with the first item aligned to the start and the last item aligned to the end. The remaining space is distributed between the items. */
 
 .hamburger-icon {
   display: flex;
@@ -98,282 +98,43 @@ a:hover {
   cursor: pointer;
 }
 
+/* we used ease-in-out instead of ease so that hamburger menu turns into x */
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: #68604d;
+  background-color: black;
   transition: all 0.3s ease-in-out;
 }
 
 .menu-links {
   position: absolute;
   top: 100%;
-  right: 0;
-  background-color: #f1ead8;
+  right: 0%;
+  background-color: white;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
 
-.menu-links a {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-size: 2rem;
-  color: #68604d;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
-.menu-links li {
-  list-style: none;
+/* targets aLL the links */
+.menu-links li{
+    list-style: none;
 }
 
-.menu-links a:hover {
-  color: #bec5a4;
-  text-decoration: underline;
-}
-
+/* this targets the js "open" class */
 .menu-links.open {
-  max-height: 300px;
+    max-height: 300px; /* Adjust this value based on the number of links */
 }
 
-/*the translate numbers make the x box for the nav box*/
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-}
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-  opacity: 1;
-  transform: none;
-}
-
-/*SECTIONS--all links*/
-
-section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
-}
-
-.section-container {
-  display: flex;
-}
-
-/*PROFILE SECTION*/
-/*can also combube section container and profile to shortebn the code*/
-#profile {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  height: 80vh;
-}
-
-.section__pic-container {
-  display: flex;
-  width: 400px;
-  height: 400px;
-  margin: auto 0; /*this means auto on top and 0 on sides*/
-}
-
-.profile-pic {
-  border-radius: 2rem;
-}
-
-.section__text {
-  align-self: center;
-  text-align: center;
-}
-
-.section__text p {
-  /* p is the paragraph area*/
-  font-weight: 400;
-}
-
-.section__text__p1 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-}
-
-.title {
-  font-size: 3rem;
-  color: #68604d;
-  text-align: center;
-}
-
-#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
-}
-
-.social-icon {
-  height: 5rem;
-}
-
-/*ICONS*/
-
-.icon {
-  cursor: pointer;
-  height: 2rem;
-}
-
-/*BUTTONS*/
-
-.btn-container .btn {
-  font-family: "WildberryHandwrittenThin.ttf", sans-serif; /* Apply your custom font */
-}
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.btn {
-  font-weight: 600;
-  transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
-}
-
-.btn-color-1,
-.btn-color-2 {
-  border: #68604d 0.1rem solid;
-  background-color: #bec5a4;
-  color: white;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
-  background-color: #d0d8b5;
-  color: white;
-}
-
-/*ABOUT SECTION*/
-
-#about {
-  position: relative;
-}
-
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  display: flex;
-}
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  color: #616b4a;
-}
-
-.about-pic {
-  border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem; /*this means -5rem from the right side of the screen and 2 up from the bottom*/
-  bottom: 3.5rem;
-}
-
-.details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: #f1ead8;
-  border-radius: 2rem;
-  border: #68604d 0.2rem solid;
-  border-color: #68604d;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.details-container p {
-  font-size: 2rem;
-  color: #bec5a4;
-}
-
-.text-container p {
-  font-size: 2rem;
-  color: #68604d;
-}
-
-.text-container {
-  font-size: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.section-container {
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
-
-/*EXPERIENCE SECTION*/
-
-#experience {
-  position: relative;
-}
-
-.experience-sub-title {
-  color: #616b4a;
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.experience-details-container {
-  display: flex;
-  color: #616b4a;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 5rem;
-  justify-content: space-around;
-}
-
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
-}
-
-article .icon {
-  cursor: default;
-}
+.hamburger-icon.open span:first-child
