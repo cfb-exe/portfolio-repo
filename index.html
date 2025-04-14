@@ -11,7 +11,7 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">MY PORTFOLIO</div>
+      <div class="logo"><a href="#profile" onclick="toggleMenu()">MY PORTFOLIO</a></div>
       <div>
         <ul class="nav-links">
           <!-- the about link will lead to other sections that will have their own id tag-->
@@ -23,7 +23,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">MY PORTFOLIO</div>
+      <div class="logo"><a href="#profile" onclick="toggleMenu()">MY PORTFOLIO</a></div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -36,6 +36,7 @@
         <li><a href="#projects" onclick="toggleMenu()">PROJECTS</a></li>
         <li><a href="#contact" onclick="toggleMenu()">CONTACT</a></li>
       </div>
+      </div>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
@@ -44,7 +45,7 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Selena Espinoza</h1>
-        <p class="section__text__p2">and i'm trying my best, pls don't be mean to me or i'll cry :(</p>
+        <p class="section__text__p2">and i'm trying my best, pls don't be mean to me or i'll cry :( </p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -109,10 +110,10 @@
     </section>
     <section id="experience">
       <p class="section__text__p1">EXPLORE MY</p>
-      <h1 class="title">WORK</h1>
+      <h1 class="title">EXPERIENCE</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-containers">
+          <div class="details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
@@ -159,7 +160,7 @@
               </article>
             </div>
           </div>
-          <div class="details-containers">
+          <div class="details-container">
             <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
               <article>

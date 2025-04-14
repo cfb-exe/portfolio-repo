@@ -177,6 +177,8 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  background-color: #f1ead8;
+  border-radius: 2rem;
 }
 
 .section__pic-container {
@@ -303,7 +305,7 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: #bec5a4;
+  background: #f1ead8;
   border-radius: 2rem;
   border: #68604d 0.2rem solid;
   border-color: #68604d;
@@ -313,7 +315,12 @@ section {
 
 .details-container p {
   font-size: 2rem;
-  color: #e8ecd9;
+  color: #bec5a4;
+}
+
+.text-container p {
+  font-size: 2rem;
+  color: #68604d;
 }
 
 .text-container {
@@ -359,7 +366,7 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2rem;
+  gap: 5rem;
   justify-content: space-around;
 }
 
