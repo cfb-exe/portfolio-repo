@@ -21,7 +21,7 @@ html {
 }
 
 p {
-  color: black;
+  color: #68604d;
 }
 
 /* TRANSITION */
@@ -53,7 +53,7 @@ nav {
 }
 
 a {
-  color: black;
+  color: #68604d;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -67,6 +67,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  color: #68604d;
 }
 
 .logo:hover {
@@ -102,7 +103,7 @@ space-between: Distributes items evenly across the container, with the first ite
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: #68604d;
   transition: all 0.3s ease-in-out;
 }
 
@@ -122,7 +123,7 @@ space-between: Distributes items evenly across the container, with the first ite
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: #68604d;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
@@ -198,6 +199,7 @@ section {
 
 .section__text p {
   font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .section__text__p1 {
@@ -289,6 +291,11 @@ section {
   display: flex;
 }
 
+.about-details-container h3 {
+  text-align: center;
+  color: #8a8e75;
+}
+
 /* -5 from the rigfht and 2.5 up from bottom */
 .arrow {
   position: absolute;
@@ -330,7 +337,7 @@ section {
 .experience-sub-title {
   font-size: 2rem;
   text-align: center;
-  color: #68604d;
+  color: #8a8e75;
   margin-bottom: 2rem;
 }
 
@@ -339,3 +346,29 @@ section {
   flex-direction: column;
   display: flex;
 }
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+.article-container h3 {
+  color: #8a8e75;
+}
+
+.article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS */
