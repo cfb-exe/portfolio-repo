@@ -19,6 +19,8 @@
 
 body {
   font-family: "WildberryHandwrittenLight", sans-serif;
+  background-image: url('./assets/background.png');
+  background-size: cover;
 }
 
 html {
@@ -200,26 +202,34 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
+  background: #f1ead8;
+  border-radius: 2rem;
+  border: none;
+  padding: 1.5rem;
+  height: 350px;
 }
 
 .section__text p {
+  margin-top: 1.7rem;
   font-weight: 600;
   font-size: 1.5rem;
 }
 
 .section__text__p1 {
   text-align: center;
+  font-size: 2rem;
   color: #8a8e75;
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 1.75rem;  
   margin-bottom: 1rem;
   color: #8a8e75;
 }
 
 .title {
   font-size: 3rem;
+  margin-bottom: -1rem;
   text-align: center;
   color: #68604d;
 }
@@ -262,6 +272,7 @@ section {
 }
 
 .btn {
+  font-family: "WildberryHandwrittenLight", sans-serif;
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
