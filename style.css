@@ -5,8 +5,8 @@
 /* GENERAL */
 
 @font-face {
-  font-family: 'WildberryHandwrittenLight';
-  src: url('./assets/WildberryHandwrittenLight.ttf') format('truetype');
+  font-family: "WildberryHandwrittenLight";
+  src: url("./assets/WildberryHandwrittenLight.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -19,7 +19,7 @@
 
 body {
   font-family: "WildberryHandwrittenLight", sans-serif;
-  background-image: url('./assets/background.png');
+  background-image: url("./assets/background.png");
   background-size: cover;
 }
 
@@ -184,6 +184,7 @@ section {
 
 #profile {
   justify-content: center;
+  align-items: center; /* Centers content vertically */
   gap: 5rem;
   height: 80vh;
 }
@@ -206,30 +207,29 @@ section {
   border-radius: 2rem;
   border: none;
   padding: 1.5rem;
-  height: 350px;
 }
 
 .section__text p {
-  margin-top: 1.7rem;
   font-weight: 600;
   font-size: 1.5rem;
 }
 
 .section__text__p1 {
+  margin-top: 1.5rem;
   text-align: center;
   font-size: 2rem;
   color: #8a8e75;
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;  
-  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
   color: #8a8e75;
 }
 
 .title {
   font-size: 3rem;
-  margin-bottom: -1rem;
+  margin-bottom: 0.5rem;
   text-align: center;
   color: #68604d;
 }
@@ -269,6 +269,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .btn {
@@ -306,6 +307,16 @@ section {
   margin-top: 2rem;
 }
 
+.about-header {
+  width: fit-content;
+  justify-content: center;
+  border-radius: 2rem;
+  border: none;
+  background: #f1ead8;
+  margin: 2rem auto;
+  padding: 0.5rem 5rem;
+}
+
 .about-details-container {
   justify-content: center;
   flex-direction: column;
@@ -333,6 +344,7 @@ section {
   text-align: center;
 }
 
+/* The gap of 4rem ensures consistent spacing between child elements for better visual balance and readability. */
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -348,6 +360,16 @@ section {
 
 #experience {
   position: relative;
+}
+
+.experience-header {
+  width: fit-content;
+  justify-content: center;
+  border-radius: 2rem;
+  border: none;
+  background: #f1ead8;
+  margin: 2rem auto;
+  padding: 0.5rem 5rem;
 }
 
 .experience-title {
@@ -366,6 +388,8 @@ section {
   justify-content: center;
   flex-direction: column;
   display: flex;
+  gap: 4rem;
+  height: 80%;
 }
 
 .article-container {
@@ -398,6 +422,16 @@ article .icon {
   position: relative;
 }
 
+.project-header {
+  width: fit-content;
+  justify-content: center;
+  border-radius: 2rem;
+  border: none;
+  background: #f1ead8;
+  margin: 2rem auto;
+  padding: 0.5rem 5rem;
+}
+
 .project-img {
   border-radius: 2rem;
   width: 70%;
@@ -405,7 +439,7 @@ article .icon {
 }
 
 .project-title {
-  margin: 1rem
+  margin: 1rem;
   color: #68604d;
 }
 
@@ -416,6 +450,16 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+}
+
+.contact-header {
+  width: fit-content;
+  justify-content: center;
+  border-radius: 2rem;
+  border: none;
+  background: #f1ead8;
+  margin: 2rem auto;
+  padding: 0.5rem 5rem;
 }
 
 .contact-info-upper-container {
@@ -434,7 +478,7 @@ article .icon {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  margin: 1rem;;
+  margin: 1rem;
 }
 
 .contact-info-container p {
