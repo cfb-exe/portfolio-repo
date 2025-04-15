@@ -317,3 +317,25 @@ section {
 }
 
 /* EXPERIENCE */
+
+#experience {
+  position: relative;
+}
+
+.experience-title {
+  font-size: 3rem;
+  text-align: center;
+  color: #68604d;
+}
+.experience-sub-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #68604d;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
