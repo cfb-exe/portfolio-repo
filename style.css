@@ -4,7 +4,12 @@
 
 /* GENERAL */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@font-face {
+  font-family: 'WildberryHandwrittenLight';
+  src: url('./assets/WildberryHandwrittenLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* the * targets the whole page */
 * {
@@ -13,7 +18,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "WildberryHandwrittenLight", sans-serif;
 }
 
 html {
@@ -243,6 +248,11 @@ section {
   height: 3rem;
 }
 
+.contact-icon {
+  cursor: default;
+  height: 3rem;
+}
+
 /* BUTTONS */
 
 .btn-container {
@@ -372,3 +382,50 @@ article .icon {
 }
 
 /* PROJECTS */
+
+#projects {
+  position: relative;
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 70%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem
+  color: #68604d;
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  border-radius: 2rem;
+  border: none;
+  background: #f1ead8;
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
