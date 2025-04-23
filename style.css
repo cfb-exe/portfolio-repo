@@ -62,14 +62,14 @@ nav {
 a {
   color: #68604d;
   text-decoration: none;
-  text-decoration-color: white;
+  text-decoration-color: #68604d;
 }
 
 a:hover {
-  color: grey;
+  color: #d5c7ad;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: grey;
+  text-decoration-color: #d5c7ad;
 }
 
 .logo {
@@ -205,7 +205,7 @@ section {
   text-align: center;
   background: #f1ead8;
   border-radius: 2rem;
-  border: none;
+  border: solid 5px #8a8e75;
   padding: 1.5rem;
 }
 
@@ -313,6 +313,7 @@ section {
   border-radius: 2rem;
   border: none;
   background: #f1ead8;
+  border: solid 5px #8a8e75;
   margin: 2rem auto;
   padding: 0.5rem 5rem;
 }
@@ -339,8 +340,8 @@ section {
   padding: 1.5rem;
   flex: 1;
   background: #f1ead8;
+  border: solid 5px #8a8e75;
   border-radius: 2rem;
-  border: none;
   text-align: center;
 }
 
@@ -368,6 +369,7 @@ section {
   border-radius: 2rem;
   border: none;
   background: #f1ead8;
+  border: solid 5px #8a8e75;
   margin: 2rem auto;
   padding: 0.5rem 5rem;
 }
@@ -428,6 +430,7 @@ article .icon {
   border-radius: 2rem;
   border: none;
   background: #f1ead8;
+  border: solid 5px #8a8e75;
   margin: 2rem auto;
   padding: 0.5rem 5rem;
 }
@@ -449,7 +452,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 73vh;
 }
 
 .contact-header {
@@ -458,6 +461,7 @@ article .icon {
   border-radius: 2rem;
   border: none;
   background: #f1ead8;
+  border: solid 5px #8a8e75;
   margin: 2rem auto;
   padding: 0.5rem 5rem;
 }
@@ -467,8 +471,8 @@ article .icon {
   width: fit-content;
   justify-content: center;
   border-radius: 2rem;
-  border: none;
   background: #f1ead8;
+  border: solid 5px #8a8e75;
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -483,4 +487,17 @@ article .icon {
 
 .contact-info-container p {
   font-size: larger;
+}
+
+/*FOOTER */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1rem;
+  color: #68604d;
 }
