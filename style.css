@@ -175,18 +175,19 @@ section {
   min-height: fit-content;
 }
 
-.section-container,
-#profile {
+.section-container {
   display: flex;
 }
 
 /* PROFILE */
 
 #profile {
+  position: relative;
   justify-content: center;
   align-items: center; /* Centers content vertically */
   gap: 5rem;
   height: 80vh;
+  display: flex;
 }
 
 .section__pic-container {
